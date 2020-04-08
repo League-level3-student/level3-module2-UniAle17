@@ -35,12 +35,52 @@ public class MergeSorter extends Sorter {
 			
 			mergeSort(array, middle+1, high, display);
 			
+			for (int i = lo; i <= high; i++) {
+				
+				same[i]=array[i];
+				
+			}
 			
+			
+			int i=lo;
+			int j=middle+1;
+			int k=lo;
+			
+			while(i<=middle&&j<=high) {
+				
+				if(same[i]<=same[j]) {
+					
+					array[k]=same[i];
+				
+					i=i+1;
+					
+					
+				}
+				
+				else {
+					
+					array[k]=same[i];
+					j=j+1;
+					
+				}
+				
+				k=k+1;
+			}
+			
+			
+			
+			while(i<=middle) {
+					
+				array[k]=same[i];
+				
+				k=k+1;
+				i=i+1
+						
+			}
 			
 		}
-		
 
-			//3. Create an integer called middle and set it 
+			//3. Create an integer called middle and set it ;;
 			//   equal to the half way point between low and high
             
             //4. call the mergeSort method with low and middle
@@ -64,13 +104,11 @@ public class MergeSorter extends Sorter {
                     //11. increase i by 1
                   
                 //13. else
-            
-                    //14. set array at k equal to temp array at j
+           //14. set array at k equal to temp array at j
                    
                     //15. increase j by 1
                  
-                //16. increase k by 1
-                
+                //16. increase k by 1    
             
             //17. make a while loop that runs while i is less than or equal to middle
             
