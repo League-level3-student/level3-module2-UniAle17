@@ -24,6 +24,8 @@ public class SelectionSorter extends Sorter {
 					index=i;
 				}
 				
+				array[index]=array[i];
+				
 			}
 			
 		}
