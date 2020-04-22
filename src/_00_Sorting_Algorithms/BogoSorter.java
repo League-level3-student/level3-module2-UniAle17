@@ -21,5 +21,23 @@ public class BogoSorter extends Sorter {
 	@Override
 	void sort(int[] array, SortingVisualizer display) {
 
+		Random ran = new Random();
+		
+		while(_00_SortedArrayChecker.intArraySorted(array)==false) {
+			
+			int firstran = ran.nextInt(array.length);
+			
+			int secondran = ran.nextInt(array.length);
+			
+			int swap= array[firstran];
+			
+			array[firstran]=array[secondran];
+			array[secondran]=swap;
+			
+			display.updateDisplay();
+			
+		}
+		
+		
 	}
 }

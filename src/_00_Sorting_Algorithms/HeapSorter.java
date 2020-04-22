@@ -23,10 +23,27 @@ public class HeapSorter extends Sorter {
 		//   0 and n and counts down until it is less than 0.
 		//   Inside this for loop, call the heapSort method with n and i
         
-				HERE
+		for (int i = n/2; i >= 0; i--) {
+			
+			heapSort(array, n, i, display);
+			
+		}
+				
 		
         //10. make a for loop that starts at n-1 
         //    and counts down until it is less than 0.
+		
+			for (int i = n-1; i > 0; i--) {
+				
+				int swap=array[i];
+				
+				array[i]=array[0];
+				array[0]=swap;
+				
+				
+				heapSort(array, i, 0, display);
+				
+			}
         
         	//11. swap the array elements at 0 and i.
  
