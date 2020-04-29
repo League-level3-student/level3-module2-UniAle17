@@ -25,6 +25,9 @@ public class BubbleSorter extends Sorter{
 					 
 					 array[j] = t;
 					 
+					 
+					 display.updateDisplay();
+					 
 				 }
 			 }
 		 }

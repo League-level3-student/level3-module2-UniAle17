@@ -92,17 +92,18 @@ public class HeapSorter extends Sorter {
         //   then swap the array elements at i and largest.
         //   Also, call the heapSort method with n and largest
 		
-		if(largest!=i) {
+		if(array[largest]!=array[i]) {
 			
-			int save = i;
+			int save = array[i];
 				
-			i=largest;
-			largest=save;
+			array[i]=array[largest];
+			array[largest]=save;
 			
 			heapSort(array, n, largest, display);
 			
-			
-		}
+			}
+		
+		display.updateDisplay();
 		
 	}
 

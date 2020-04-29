@@ -18,11 +18,13 @@ public class SelectionSorter extends Sorter {
 			
 			for (int j = i+1; j < array.length; j++) {
 				
-				if(j<index) {
+				if(array[j]<array[index]) {
 					
 					index=j;
-					index=i;
+					
 				}
+				
+				
 				
 				array[index]=array[i];
 				
@@ -42,6 +44,7 @@ public class SelectionSorter extends Sorter {
 				
 			//5. swap the array element at index with the array element at i
 			
+		display.updateDisplay();
 		
 	}
 }
