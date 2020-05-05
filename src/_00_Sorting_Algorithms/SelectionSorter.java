@@ -24,9 +24,10 @@ public class SelectionSorter extends Sorter {
 					
 				}
 				
-				
+				int swap= array[index];
 				
 				array[index]=array[i];
+				array[i]=swap;
 				
 			}
 			
