@@ -16,7 +16,7 @@ public class _01_BinarySearch {
 		//2. if end is greater than or equal to start, then
 		//   do steps 3 - 6.
 		
-			wrong if(array.length>==start) {
+				if(end>=start) {
 		
 		
 			//3. create an integer called mid and set it equal
@@ -41,13 +41,23 @@ public class _01_BinarySearch {
             //   for the end variable.
             
 				
+				if(array[mid]>value) {
+					
+					return binarySearch(array, start, mid-1, value);
+					
+				}
+				
+				
 				
             //6. return the value returned from a call to the binarySearch
             //   method. Use mid + 1 as the start, and pass in end.
 				
+				
+				return binarySearch(array, mid+1, end, value);
+				
 			}
  
         //7. return -1 because the value was not found
-        return 0;
+        return -1;
 	} 
 }
