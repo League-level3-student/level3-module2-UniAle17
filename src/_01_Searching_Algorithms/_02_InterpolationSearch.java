@@ -28,7 +28,27 @@ public class _02_InterpolationSearch {
 		
 			while(start<=end&&value>=array[start]&&value<=array[end]){
 				
+				int position = start + (((end - start) / (array[end] - array[start])) * (value - array[start]));
 				
+				if(array[position]==value) {
+					
+					return position;
+					
+				}
+				
+				
+				if(array[position]<value) {
+					
+					start=position+1;
+					
+				}
+				
+				
+				else {
+					
+					end=position-1;
+					
+				}
 				
 			}
 		
@@ -38,6 +58,8 @@ public class _02_InterpolationSearch {
         	//  start + (((end - start) / (array[end] - array[start])) * (value - array[start]));
         	//  This calculates the center of the array keeping the even distribution in mind.
       
+			
+			
             //5. if the array element at position is equal to the value,
             //   then we found it and can return position.
       
@@ -47,6 +69,6 @@ public class _02_InterpolationSearch {
             //7. otherwise, set end equal to position minus one
           
         //8. Return -1 because the value was not found
-        return 0;
+        return -1;
     }
 }
