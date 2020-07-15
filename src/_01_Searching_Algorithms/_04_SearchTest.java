@@ -36,6 +36,11 @@ class _04_SearchTest {
 		//3. use the assertEquals method to test your interpolation search method.
 		//   remember that the array must be sorted and evenly distributed
 		
+		int[] testingNumbers = {1, 2, 3, 4};
+		
+		assertEquals(0, _02_InterpolationSearch.interpolationSearch(testingNumbers, 1));
+		assertEquals(3, _02_InterpolationSearch.interpolationSearch(testingNumbers, 4));
+		assertEquals(-1, _02_InterpolationSearch.interpolationSearch(testingNumbers, 9));
 		
 		
 		
@@ -45,5 +50,13 @@ class _04_SearchTest {
 	public void testExponentialSearch() {
 		//4. use the assertEquals method to test your exponential search method.
 		//   remember that the array must be sorted
+		
+		int [] numberTest = {1, 2, 3, 4};
+		
+		assertEquals(1, _03_ExponentialSearch.exponentialSearch(numberTest, 2));
+		assertEquals(2, _03_ExponentialSearch.exponentialSearch(numberTest, 3));
+		assertEquals(-1, _03_ExponentialSearch.exponentialSearch(numberTest, 7));
+		
+		
 	}
 }
