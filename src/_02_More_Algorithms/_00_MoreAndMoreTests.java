@@ -85,30 +85,53 @@ public class _00_MoreAndMoreTests {
 	boolean isSquare(int input) {
 		
 		
-		boolean isSquare = true;
 		
-		for (int i = 0; i < array.length; i++) {
+		
+		for (int i = 0; i <= input; i++) {
+			
+			if(i*i==input) {
+				
+				return true;
+				
+			}
 			
 		}
 		
+		return false;
 		
 	}
 	
 	
-//
-//	@Test
-//	  public void CubeTest() {
-//
-//	    assertTrue(isCube(27));
-//	    assertTrue(isCube(216));
-//	    assertTrue(isCube(729));
-//	    assertTrue(isCube(1));
-//	    assertFalse(isCube(3));
-//	    assertFalse(isCube(22));
-//	    assertFalse(isCube(143));
-//
-//	  }
 
+	@Test
+	  public void CubeTest() {
 
+	    assertTrue(isCube(27));
+	    assertTrue(isCube(216));
+	    assertTrue(isCube(729));
+	    assertTrue(isCube(1));
+	    assertFalse(isCube(3));
+	    assertFalse(isCube(22));
+	    assertFalse(isCube(143));
+
+	  }
+
+	boolean isCube(int value) {
+		
+		for (int i = 0; i <= value; i++) {
+			
+			if(i*i*i==value) {
+				
+				return true;
+				
+			}
+			
+		}
+		
+		return false;
+		
+	}
+	
+	
 
 }
