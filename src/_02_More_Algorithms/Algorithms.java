@@ -7,11 +7,40 @@ public class Algorithms {
 		
 		for (int i = 0; i <eggs.size(); i++) {
 			
-			if()
+			if(eggs.get(i).equals("cracked")) {
+			
+			
+				return i;
+				
+		}
+		
+		
+	}
+		return -1;
+}
+
+	
+	public static int countPearls(List<Boolean> oysters) {
+		
+		int totalPearls=0;
+		
+		for (int i = 0; i < oysters.size(); i++) {
+			
+			if(oysters.get(i)==true) {
+				
+				totalPearls=totalPearls+1;
+				
+			
+				
+			}
 			
 			
 		}
 		
-		return 0;
+		return totalPearls;
+		
 	}
+	
+	
 }
+
