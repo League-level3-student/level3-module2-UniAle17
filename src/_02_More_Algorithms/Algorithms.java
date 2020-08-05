@@ -41,6 +41,47 @@ public class Algorithms {
 		
 	}
 	
+	public static double findTallest(List<Double> peeps) {
+		
+		double tallest = peeps.get(0);
+		
+		for (int i = 1; i < peeps.size(); i++) {
+			
+			
+			if(peeps.get(i)>tallest)
+			
+				tallest=peeps.get(i);
+				
+		}
+		
+		
+		return tallest;
+		
+	}
+	
+	
+	public static String findLongestWord(List<String> words) {
+		
+		String longestWord = words.get(0);
+		
+		
+		for (int i = 0; i < words.size(); i++) {
+			
+			if(words.get(i).length()>longestWord.length()) {
+				
+				longestWord = words.get(i);
+				
+			}
+			
+		}
+		
+		return longestWord;
+		
+	}
+	
+	
+	
+	
 	
 }
 
