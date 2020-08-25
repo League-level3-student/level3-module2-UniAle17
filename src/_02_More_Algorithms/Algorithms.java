@@ -80,7 +80,22 @@ public class Algorithms {
 	}
 	
 	
+	public static boolean containsSOS(List<String>example) {
 	
+		
+		for (int i = 0; i < example.size(); i++) {
+			
+			if(example.get(i).contains("... --- ...")) {
+				
+				return true;
+			}
+		
+			
+		}
+		
+		return false;
+		
+	}
 	
 	
 }
