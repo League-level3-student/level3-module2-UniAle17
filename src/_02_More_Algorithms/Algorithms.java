@@ -1,5 +1,6 @@
 package _02_More_Algorithms;
 
+import java.util.Collections;
 import java.util.List;
 
 public class Algorithms {
@@ -89,14 +90,30 @@ public class Algorithms {
 				
 				return true;
 			}
-		
 			
 		}
-		
+			
 		return false;
 		
 	}
+		
+		
+		public static List<Double> sortScores(List<Double>results) {
+			
+			Collections.sort(results);
+			
+			
+			return results;
+		
+	}
 	
-	
-}
+		public static List<Double> sortDNA(List<Double>example){
+			
+			for
+			
+		}
+		
+		
+
+
 
