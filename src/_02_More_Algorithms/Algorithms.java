@@ -107,13 +107,40 @@ public class Algorithms {
 		
 	}
 	
-		public static List<Double> sortDNA(List<Double>example){
+		public static List<String> sortDNA(List<String>example){
 			
-			for
+			
+			for (int i = 0; i < example.size()-1; i++) {
+				
+				for (int j = i+1; j < example.size(); j++) {
+					
+					if(example.get(i).length()>example.get(j).length()) {
+						
+						String temp = example.get(i);
+						
+						example.set(i, example.get(j));
+						
+						example.set(j, temp);
+						
+					}
+					
+				}
+				
+			}
+		
+		return example;
+
+		}
+		
+		public static List<String> sortWords(List<String>words){
+			
+			
+			Collections.sort(words);
+			
+			return words;
 			
 		}
 		
 		
-
-
+}
 
